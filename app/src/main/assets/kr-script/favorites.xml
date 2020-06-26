@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<group>
+    <text>
+        <title>VMOS Pro ROMEditingTool</title>
+        <desc>
+            本应用程序一站式修改打包VMOS Pro ROM.
+              注意:本应用允许转载，但需附属原开发者。
+        </desc>
+    </text>
+    </group>
+    <group>
+  <text>
+        <title>主要开发者</title>
+        <desc>
+            Flytreels   嘟嘟斯基
+        </desc>
+    </text>
+    </group>
+<group>
+        <text>
+            <title>开源许可</title>
+            <desc>
+            Apache License
+         Version 2.0, January 2004
+       http://www.apache.org/licenses/
+            </desc>
+        </text>
+    </group>
+ <group title="运行环境测试">
+        <page config="kr-script/debug.xml" title="环境测试" />
+    </group>

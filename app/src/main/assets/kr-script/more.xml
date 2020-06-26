@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<items>
+<action>
+            <title>解压ROM包到工作目录</title>
+            <param name="romzip" label="文件选择" type="file"
+                suffix="zip"
+                value="/sdcard/" />
+            <set>file:///android_asset/toolkit/unrom.sh</set>
+        </action>
+<action>
+    <title>添加APK到ROM中(系统应用)</title>
+    <param name="addapk" label="APK包文件夹存放位置" title="Tips: 请把一个或多个apk放在一个文件夹中即可" placeholder="请输入...." type="text" />
+    <set>file:///android_asset/toolkit/addapk.sh</set>
+    </action>
+    
+<action>
+    <title>移除ROM自带XP框架(bug)</title>
+    <set>file:///android_asset/toolkit/delxp.sh</set>
+</action>
+<action>
+    <title>移除ROM自带ROOT</title>
+    <set>file:///android_asset/toolkit/delroot.sh</set>
+</action>
+<action>
+    <title>移除ROM自带桌面</title>
+    <set>file:///android_asset/toolkit/dellauncher.sh</set>
+</action>
+ <action>
+    <title>添加GoogleSans</title>
+    <set>file:///android_asset/toolkit/addgsans.sh</set>
+</action>
+ <action>
+            <title>添加蝰蛇音效🐍</title>
+            <param name="sdk">
+                <option value="l">安卓5.1</option>
+                <option value="n">安卓7.1</option>
+            </param>
+            <set>file:///android_asset/toolkit/addv4a.sh</set>
+        </action>
+        <action>
+            <title>添加默认壁纸🗻</title>
+           <param name="wallpaper" label="选择壁纸" type="file"
+                value=" " />
+            <set>file:///android_asset/toolkit/addwallpaper.sh</set>
+        </action>
+         <action>
+            <title>添加开机动画🗻</title>
+           <param name="bootmedia" label="选择Zip" type="file"
+                value=" " />
+            <set>file:///android_asset/toolkit/addbootmedia.sh</set>
+        </action>
+         <action>
+            <title>一键精简</title>
+            <param name="sdk">
+                <option value="l">安卓5.1 (130mb左右)</option>
+                <option value="n">安卓7.1 (250mb左右)</option>
+            </param>
+            <set>file:///android_asset/toolkit/fastdel-$sdk.sh</set>
+        </action>
+          <action>
+            <title>打包ROM</title>
+            <param name="zromzip2" label="ROM包保存位置" title="Tips: /sdcard/ 是内部存储" placeholder="请输入...." type="text" />
+            <set>file:///android_asset/toolkit/zrom.sh</set>
+        </action>
+        <action>
+    <title>清理垃圾(已打包后)</title>
+    <set>rm -rf $START_DIR/romcache/</set>
+</action>
+</items>
